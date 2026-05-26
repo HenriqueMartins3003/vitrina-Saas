@@ -1,8 +1,19 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+.next/
+**/.next/
+
+# NestJS specific
 /tmp
+.temp
+.tmp
 
 # Logs
 logs
@@ -15,14 +26,13 @@ lerna-debug.log*
 
 # dotenv environment variable files
 .env
+.env.local
 .env.development
 .env.test
 .env.production
+.env.*.local
 
-# temp directory
-.temp
-.tmp
-
-.ds_store
+# macOS
 .DS_Store
+.ds_store
 **/.DS_Store

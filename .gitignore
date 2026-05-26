@@ -5,6 +5,8 @@ node_modules/
 # Build outputs
 dist/
 **/dist/
+**/Apps/api/dist/
+
 build/
 **/build/
 .next/
@@ -31,8 +33,25 @@ lerna-debug.log*
 .env.test
 .env.production
 .env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
 
 # macOS
 .DS_Store
 .ds_store
 **/.DS_Store
+
+# Python
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# FastAPI / local env
+.env
+.env.local

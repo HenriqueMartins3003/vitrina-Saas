@@ -6,7 +6,12 @@
   "scripts": {
     "dev:web": "pnpm --filter web dev",
     "dev:api": "pnpm --filter api dev",
+    "dev:ai": "cd Apps/ai-worker && source .venv/bin/activate && uvicorn src.main:app --reload --port 8001",
     "dev": "pnpm -r --parallel dev",
+    "dev:db": "docker compose up -d postgres",
+    "stop:db": "docker compose stop postgres",
+    "down:db": "docker compose down",
+    "logs:db": "docker compose logs -f postgres",
     "build:web": "pnpm --filter web build",
     "build:api": "pnpm --filter api build"
   },
